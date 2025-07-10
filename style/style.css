@@ -231,11 +231,6 @@ section.especialidades {
   box-shadow: 0 0 40px 10px #ffffff2c;
 }
 
-section.especialidades .flex {
-  gap: 60px;
-  justify-content: space-between;
-}
-
 .front-end h3 {
   text-align: center;
   padding: 25px;
@@ -243,9 +238,15 @@ section.especialidades .flex {
   color: #00ff08;
 }
 
+section.especialidades .flex {
+  gap: 60px;
+  justify-content: space-evenly;
+}
+
 .imagens-tec {
   display: flex;
-  gap: 20px; /* Espaçamento entre os ícones */
+  justify-content: center;
+  gap: 60px; /* Espaçamento entre os ícones */
 }
 
 .icon-container {
@@ -260,6 +261,7 @@ section.especialidades .flex {
 
 .icon-container:hover svg {
   transform: scale(1.5); /* Zoom no SVG */
+  /* cursor: none; */
 }
 
 .tec-nome {
@@ -281,6 +283,7 @@ section.especialidades .flex {
 .icon-container:hover .tec-nome {
   opacity: 1; /* Mostra o texto ao passar o mouse */
   color: #11f50af5;
+  cursor: default;
 }
 
 .back-end h3 {
@@ -313,7 +316,6 @@ section.sobre {
 
 .sobre .txt-sobre h2 span {
   color: #00ff08;
-  display: block;
 }
 
 .sobre .txt-sobre p {
